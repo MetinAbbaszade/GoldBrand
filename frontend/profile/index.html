@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | Gold Brand Luxury Jewelry</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile-wrapper">
+            <div class="profile-header">
+                <div class="profile-image">
+                    <img src="https://images.unsplash.com/photo-1618667074051-8da183ae7e32?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Profile Photo">
+                    <div class="edit-photo">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                </div>
+                <div class="profile-info">
+                    <h1>Sophia Laurent</h1>
+                    <p>sophia.laurent@email.com</p>
+                    <button class="edit-profile-btn">Edit Profile</button>
+                </div>
+            </div>
+
+            <div class="profile-navigation">
+                <div class="tab active" data-tab="account-info">Account Info</div>
+                <div class="tab" data-tab="order-history">Order History</div>
+                <div class="tab" data-tab="wishlist">Wishlist</div>
+                <div class="tab" data-tab="settings">Settings</div>
+            </div>
+
+            <div class="profile-content">
+                <div class="tab-content active" id="account-info">
+                    <h2>Account Information</h2>
+                    <div class="info-group">
+                        <div class="info-item">
+                            <span class="label">Full Name</span>
+                            <span class="value">Sophia Laurent</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Email Address</span>
+                            <span class="value">sophia.laurent@email.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Phone Number</span>
+                            <span class="value">+1 (555) 123-4567</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Default Shipping Address</span>
+                            <span class="value">123 Luxury Lane, Apt 4B<br>New York, NY 10001</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="order-history">
+                    <h2>Order History</h2>
+                    <div class="orders-list">
+                        
+                        <div class="order-card">
+                            <div class="order-header">
+                                <div class="order-info">
+                                    <div class="order-number">Order #12345</div>
+                                    <div class="order-date">June 15, 2023</div>
+                                </div>
+                                <div class="order-status delivered">
+                                    <span class="status-dot"></span>
+                                    Delivered
+                                </div>
+                            </div>
+                            <div class="order-products">
+                                <div class="product-thumbnail">
+                                    <img src="https://via.placeholder.com/80" alt="Diamond Bracelet">
+                                </div>
+                                <div class="product-thumbnail">
+                                    <img src="https://via.placeholder.com/80" alt="Gold Necklace">
+                                </div>
+                            </div>
+                            <div class="order-footer">
+                                <div class="order-total">$3,450.00</div>
+                                <button class="view-details-btn">View Details</button>
+                            </div>
+                            <div class="order-details">
+                                <h3>Order Details</h3>
+                                <div class="details-grid">
+                                    <div class="product-item">
+                                        <img src="https://via.placeholder.com/120" alt="Diamond Bracelet">
+                                        <div class="product-details">
+                                            <h4>Diamond Tennis Bracelet</h4>
+                                            <p>18K White Gold, 3.25 ct Diamond</p>
+                                            <span class="product-price">$2,450.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <img src="https://via.placeholder.com/120" alt="Gold Necklace">
+                                        <div class="product-details">
+                                            <h4>Signature Gold Chain</h4>
+                                            <p>24K Gold, 18 inches</p>
+                                            <span class="product-price">$1,000.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-summary">
+                                    <div class="summary-item">
+                                        <span>Subtotal</span>
+                                        <span>$3,450.00</span>
+                                    </div>
+                                    <div class="summary-item">
+                                        <span>Shipping</span>
+                                        <span>Free</span>
+                                    </div>
+                                    <div class="summary-item">
+                                        <span>Tax</span>
+                                        <span>$0.00</span>
+                                    </div>
+                                    <div class="summary-item total">
+                                        <span>Total</span>
+                                        <span>$3,450.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="order-card">
+                            <div class="order-header">
+                                <div class="order-info">
+                                    <div class="order-number">Order #12346</div>
+                                    <div class="order-date">May 28, 2023</div>
+                                </div>
+                                <div class="order-status processing">
+                                    <span class="status-dot"></span>
+                                    Processing
+                                </div>
+                            </div>
+                            <div class="order-products">
+                                <div class="product-thumbnail">
+                                    <img src="https://via.placeholder.com/80" alt="Gold Earrings">
+                                </div>
+                            </div>
+                            <div class="order-footer">
+                                <div class="order-total">$1,850.00</div>
+                                <button class="view-details-btn">View Details</button>
+                            </div>
+                            <div class="order-details">
+                                <h3>Order Details</h3>
+                                <div class="details-grid">
+                                    <div class="product-item">
+                                        <img src="https://via.placeholder.com/120" alt="Gold Earrings">
+                                        <div class="product-details">
+                                            <h4>Royal Sapphire Earrings</h4>
+                                            <p>18K Gold with Blue Sapphire</p>
+                                            <span class="product-price">$1,850.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-summary">
+                                    <div class="summary-item">
+                                        <span>Subtotal</span>
+                                        <span>$1,850.00</span>
+                                    </div>
+                                    <div class="summary-item">
+                                        <span>Shipping</span>
+                                        <span>Free</span>
+                                    </div>
+                                    <div class="summary-item">
+                                        <span>Tax</span>
+                                        <span>$0.00</span>
+                                    </div>
+                                    <div class="summary-item total">
+                                        <span>Total</span>
+                                        <span>$1,850.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="wishlist">
+                    <h2>My Wishlist</h2>
+                    <p>Your saved items will appear here.</p>
+                    
+                </div>
+
+                <div class="tab-content" id="settings">
+                    <h2>Account Settings</h2>
+                    <p>Manage your preferences and security settings.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
