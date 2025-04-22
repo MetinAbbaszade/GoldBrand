@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "name": "Gold Serenity Necklace",
+        "image": "https://images.unsplash.com/photo-1618667074051-8da183ae7e32?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "price": "$1,280",
+        "collection": "Celestial"
+    },
+    {
+        "id": 2,
+        "name": "Starlight Diamond Ring",
+        "image": "https://images.unsplash.com/photo-1618667074051-8da183ae7e32?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "price": "$2,450",
+        "collection": "Celestial"
+    },
+    {
+        "id": 3,
+        "name": "Cosmic Pearl Earrings",
+        "image": "https://images.unsplash.com/photo-1618667074051-8da183ae7e32?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "price": "$980",
+        "collection": "Celestial"
+    },
+    {
+        "id": 4,
+        "name": "Lunar Sapphire Bracelet",
+        "image": "https://images.unsplash.com/photo-1618667074051-8da183ae7e32?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "price": "$1,780",
+        "collection": "Celestial"
+    },
+    {
+        "id": 5,
+        "name": "Heritage Gold Bangle",
+        "image": "https://images.unsplash.com/photo-1618667074051-8da183ae7e32?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "price": "$1,350",
+        "collection": "Heritage"
+    },
+    {
+        "id": 6,
+        "name": "Vintage Ruby Pendant",
+        "image": "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1780&q=80",
+        "price": "$2,100",
+        "collection": "Vintage"
+    },
+    {
+        "id": 7,
+        "name": "Minimal White Gold Ring",
+        "image": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+        "price": "$890",
+        "collection": "Minimalist"
+    },
+    {
+        "id": 8,
+        "name": "Art Deco Diamond Earrings",
+        "image": "https://plus.unsplash.com/premium_photo-1671117832681-616b25458f18?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
+        "price": "$1,920",
+        "collection": "Art Deco"
+    }
+]
