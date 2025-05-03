@@ -1,58 +1,332 @@
 [
     {
         "id": 1,
-        "name": "Gold Serenity Necklace",
-        "image": "https://images.unsplash.com/photo-1618667074051-8da183ae7e32?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "price": "1,280",
-        "collection": "Celestial"
+        "name": "Royal Diamond Pendant",
+        "images": [
+            "https://plus.unsplash.com/premium_photo-1671641737519-a69a7d324ce6?q=80&w=2553&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://plus.unsplash.com/premium_photo-1674255466836-f38d1cc6fd0d?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1569397288884-4d43d6738fbd?q=80&w=3018&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        ],
+        "price": 1250,
+        "collection": "Royal",
+        "description": "This exquisite Royal Diamond Pendant showcases the finest craftsmanship and materials. The pendant features a brilliant-cut diamond centerpiece of exceptional clarity, set in 18-karat gold with meticulous attention to detail. The elegant design draws inspiration from royal jewels, creating a piece that is both timeless and sophisticated.",
+        "details": {
+            "metal": "18K Gold",
+            "diamond": "0.75 carat",
+            "clarity": "VS1",
+            "color": "G",
+            "chainLength": "18 inches",
+            "pendantSize": "12mm x 8mm",
+            "weight": "3.6g"
+        },
+        "relatedProducts": [
+            2,
+            5,
+            10,
+            6
+        ],
+        "recentlyViewed": [
+            3,
+            4,
+            7,
+            8
+        ]
     },
     {
         "id": 2,
-        "name": "Starlight Diamond Ring",
-        "image": "https://images.unsplash.com/photo-1618667074051-8da183ae7e32?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "price": "2,450",
-        "collection": "Celestial"
+        "name": "Celestial Star Earrings",
+        "images": [
+            "https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1450297166380-cabe503887e5?q=80&w=3333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1512163143273-bde0e3cc7407?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        ],
+        "price": 850,
+        "collection": "Celestial",
+        "description": "This delicate brooch is designed like a blooming flower, made of 18K yellow gold with a sparkling diamond center, perfect for formal occasions. A timeless piece that adds elegance to any outfit. This delicate brooch is designed like a blooming flower, made of 18K yellow gold with a sparkling diamond center, perfect for formal occasions. A timeless piece that adds elegance to any outfit.",
+        "details": {
+            "metal": "18K Gold",
+            "diamond": "0.25 carat total",
+            "clarity": "VS2",
+            "color": "F",
+            "length": "15mm",
+            "width": "12mm",
+            "weight": "2.8g"
+        },
+        "relatedProducts": [
+            5,
+            10,
+            1,
+            4
+        ],
+        "recentlyViewed": [
+            3,
+            4,
+            7,
+            8
+        ]
     },
     {
         "id": 3,
-        "name": "Cosmic Pearl Earrings",
-        "image": "https://images.unsplash.com/photo-1618667074051-8da183ae7e32?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "price": "980",
-        "collection": "Celestial"
+        "name": "Eternal Love Ring",
+        "images": [
+            "https://plus.unsplash.com/premium_photo-1708958117373-5d354f07a61a?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1610694955371-d4a3e0ce4b52?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://plus.unsplash.com/premium_photo-1671641737519-841d15b5211f?q=80&w=2553&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        ],
+        "price": 1500,
+        "collection": "Romance",
+        "description": "This delicate brooch is designed like a blooming flower, made of 18K yellow gold with a sparkling diamond center, perfect for formal occasions. A timeless piece that adds elegance to any outfit. This delicate brooch is designed like a blooming flower, made of 18K yellow gold with a sparkling diamond center, perfect for formal occasions. A timeless piece that adds elegance to any outfit.",
+        "details": {
+            "metal": "Platinum",
+            "diamond": "1.00 carat total",
+            "clarity": "VVS2",
+            "color": "E",
+            "ringSize": "6.5",
+            "width": "3mm",
+            "weight": "4.2g"
+        },
+        "relatedProducts": [
+            1,
+            2,
+            6,
+            9
+        ],
+        "recentlyViewed": [
+            2,
+            4,
+            7,
+            8
+        ]
     },
     {
         "id": 4,
-        "name": "Lunar Sapphire Bracelet",
-        "image": "https://images.unsplash.com/photo-1618667074051-8da183ae7e32?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "price": "1,780",
-        "collection": "Celestial"
+        "name": "Ocean Wave Bracelet",
+        "images": [
+            "https://images.unsplash.com/photo-1628926379972-9843ad139a8c?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1514612497953-05d1e5e171fa?q=80&w=3538&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        ],
+        "price": 720,
+        "collection": "Nature",
+        "description": "This delicate brooch is designed like a blooming flower, made of 18K yellow gold with a sparkling diamond center, perfect for formal occasions. A timeless piece that adds elegance to any outfit. This delicate brooch is designed like a blooming flower, made of 18K yellow gold with a sparkling diamond center, perfect for formal occasions. A timeless piece that adds elegance to any outfit.",
+        "details": {
+            "metal": "18K White Gold",
+            "diamond": "0.30 carat total",
+            "clarity": "VS1",
+            "color": "G",
+            "length": "7 inches",
+            "width": "5mm",
+            "weight": "5.1g"
+        },
+        "relatedProducts": [
+            2,
+            8,
+            10,
+            3
+        ],
+        "recentlyViewed": [
+            3,
+            6,
+            7,
+            8
+        ]
     },
     {
         "id": 5,
-        "name": "Heritage Gold Bangle",
-        "image": "https://images.unsplash.com/photo-1618667074051-8da183ae7e32?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "price": "1,350",
-        "collection": "Heritage"
+        "name": "Golden Bloom Brooch",
+        "images": [
+            "https://plus.unsplash.com/premium_photo-1681276169450-4504a2442173?q=80&w=3027&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1611652022419-a9419f74343d?q=80&w=3388&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1502652023201-a16bde8138d2?q=80&w=3538&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        ],
+        "price": 690,
+        "collection": "Floral",
+        "description": "This delicate brooch is designed like a blooming flower, made of 18K yellow gold with a sparkling diamond center, perfect for formal occasions. A timeless piece that adds elegance to any outfit. This delicate brooch is designed like a blooming flower, made of 18K yellow gold with a sparkling diamond center, perfect for formal occasions. A timeless piece that adds elegance to any outfit.",
+        "details": {
+            "metal": "18K Yellow Gold",
+            "diamond": "0.20 carat",
+            "clarity": "VS2",
+            "color": "F",
+            "height": "25mm",
+            "width": "25mm",
+            "weight": "3.9g"
+        },
+        "relatedProducts": [
+            1,
+            2,
+            7,
+            4
+        ],
+        "recentlyViewed": [
+            3,
+            4,
+            7,
+            8
+        ]
     },
     {
         "id": 6,
-        "name": "Vintage Ruby Pendant",
-        "image": "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1780&q=80",
-        "price": "2,100",
-        "collection": "Vintage"
+        "name": "Starlight Necklace",
+        "images": [
+            "https://images.unsplash.com/photo-1561995734-ef4b62bb6586?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1579726670131-487ecc8e1e8a?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1590166223826-12dee1677420?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        ],
+        "price": 980,
+        "collection": "Celestial",
+        "description": "This delicate brooch is designed like a blooming flower, made of 18K yellow gold with a sparkling diamond center, perfect for formal occasions. A timeless piece that adds elegance to any outfit. This delicate brooch is designed like a blooming flower, made of 18K yellow gold with a sparkling diamond center, perfect for formal occasions. A timeless piece that adds elegance to any outfit.",
+        "details": {
+            "metal": "18K Rose Gold",
+            "diamond": "0.50 carat total",
+            "clarity": "VS1",
+            "color": "G",
+            "chainLength": "20 inches",
+            "pendantSize": "18mm x 10mm",
+            "weight": "4.5g"
+        },
+        "relatedProducts": [
+            2,
+            5,
+            8,
+            9
+        ],
+        "recentlyViewed": [
+            3,
+            4,
+            7,
+            8
+        ]
     },
     {
         "id": 7,
-        "name": "Minimal White Gold Ring",
-        "image": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
-        "price": "890",
-        "collection": "Minimalist"
+        "name": "Luna Drop Earrings",
+        "images": [
+            "https://images.unsplash.com/photo-1616837874254-8d5aaa63e273?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1620656798579-1984d9e87df7?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1501046791521-e24baf06e55b?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        ],
+        "price": 770,
+        "collection": "Celestial",
+        "description": "This delicate brooch is designed like a blooming flower, made of 18K yellow gold with a sparkling diamond center, perfect for formal occasions. A timeless piece that adds elegance to any outfit. This delicate brooch is designed like a blooming flower, made of 18K yellow gold with a sparkling diamond center, perfect for formal occasions. A timeless piece that adds elegance to any outfit.",
+        "details": {
+            "metal": "18K Gold",
+            "diamond": "0.35 carat total",
+            "clarity": "VS2",
+            "color": "F",
+            "length": "25mm",
+            "width": "10mm",
+            "weight": "3.0g"
+        },
+        "relatedProducts": [
+            2,
+            4,
+            6,
+            10
+        ],
+        "recentlyViewed": [
+            3,
+            4,
+            6,
+            8
+        ]
     },
     {
         "id": 8,
-        "name": "Art Deco Diamond Earrings",
-        "image": "https://plus.unsplash.com/premium_photo-1671117832681-616b25458f18?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
-        "price": "1,920",
-        "collection": "Art Deco"
+        "name": "Nature’s Embrace Ring",
+        "images": [
+            "https://plus.unsplash.com/premium_photo-1674748385760-d846825598ab?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1601821765780-754fa98637c1?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1599459182681-c938b7f65af0?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        ],
+        "price": 890,
+        "collection": "Nature",
+        "description": "This delicate brooch is designed like a blooming flower, made of 18K yellow gold with a sparkling diamond center, perfect for formal occasions. A timeless piece that adds elegance to any outfit. This delicate brooch is designed like a blooming flower, made of 18K yellow gold with a sparkling diamond center, perfect for formal occasions. A timeless piece that adds elegance to any outfit.",
+        "details": {
+            "metal": "18K White Gold",
+            "diamond": "0.40 carat total",
+            "clarity": "VS1",
+            "color": "G",
+            "ringSize": "7",
+            "width": "4mm",
+            "weight": "3.8g"
+        },
+        "relatedProducts": [
+            4,
+            6,
+            9,
+            10
+        ],
+        "recentlyViewed": [
+            3,
+            4,
+            7,
+            10
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Sunburst Pendant",
+        "images": [
+            "https://images.unsplash.com/photo-1607703829739-c05b7beddf60?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1599458349289-18f0ee82e6ed?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1631050165155-421c47e306f7?q=80&w=3333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        ],
+        "price": 1040,
+        "collection": "Celestial",
+        "description": "This delicate brooch is designed like a blooming flower, made of 18K yellow gold with a sparkling diamond center, perfect for formal occasions. A timeless piece that adds elegance to any outfit. This delicate brooch is designed like a blooming flower, made of 18K yellow gold with a sparkling diamond center, perfect for formal occasions. A timeless piece that adds elegance to any outfit.",
+        "details": {
+            "metal": "18K Gold",
+            "diamond": "0.60 carat",
+            "clarity": "VS1",
+            "color": "F",
+            "chainLength": "18 inches",
+            "pendantSize": "14mm x 14mm",
+            "weight": "4.0g"
+        },
+        "relatedProducts": [
+            1,
+            3,
+            6,
+            7
+        ],
+        "recentlyViewed": [
+            3,
+            4,
+            7,
+            8
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Twilight Charm Bracelet",
+        "images": [
+            "https://images.unsplash.com/photo-1476965805533-564543966f62?q=80&w=3425&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1626784215021-2e39ccf971cd?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1543295204-2ae345412549?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTh8fGpld2VsbGVyeXxlbnwwfHwwfHx8MA%3D%3D"
+        ],
+        "price": 810,
+        "collection": "Celestial",
+        "description": "This delicate brooch is designed like a blooming flower, made of 18K yellow gold with a sparkling diamond center, perfect for formal occasions. A timeless piece that adds elegance to any outfit. This delicate brooch is designed like a blooming flower, made of 18K yellow gold with a sparkling diamond center, perfect for formal occasions. A timeless piece that adds elegance to any outfit.",
+        "details": {
+            "metal": "18K Rose Gold",
+            "diamond": "0.28 carat total",
+            "clarity": "VS2",
+            "color": "G",
+            "length": "7.5 inches",
+            "width": "6mm",
+            "weight": "5.5g"
+        },
+        "relatedProducts": [
+            2,
+            6,
+            7,
+            8
+        ],
+        "recentlyViewed": [
+            3,
+            4,
+            7,
+            8
+        ]
     }
 ]

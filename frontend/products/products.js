@@ -1,4 +1,3 @@
-
 const productsContainer = document.getElementById('products-container');
 const searchInput = document.getElementById('search-input');
 const searchButton = document.getElementById('search-button');
@@ -18,10 +17,41 @@ let filters = {
 };
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    renderProducts();
+document.addEventListener('DOMContentLoaded', async () => {
+    const products = await fetchProducts();
+    renderProducts(products);
     setupEventListeners();
 });
+
+
+async function renderProducts(products) {
+    productsContainer.innerHTML = '';
+    if (products.length === 0) {
+        noResults.style.display = 'block';
+    } else {
+        noResults.style.display = 'none';
+        products.forEach(product => {
+            const productCard = document.createElement('div');
+            productCard.className = 'product-card';
+            productCard.onclick = () => {
+                window.location.href = `../productDetail/product-detail.html?id=${product.id}`;
+            }
+            productCard.innerHTML = `
+                <div class="product-image">
+                    <img src="${product.images[0]}" alt="${product.name}">
+                    <div class="product-collection">${product.collection}</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">${product.name}</h3>
+                    <p class="product-price">${formatPrice(product.price)}</p>
+                    <a href="../productDetail/product-detail.html?id=${product.id}" class="product-btn">View Details</a>
+                </div>
+            `;
+
+            productsContainer.appendChild(productCard);
+        });
+    }
+}
 
 const fetchProducts = async () => {
     try {
@@ -39,7 +69,7 @@ const fetchProducts = async () => {
 
 
 function setupEventListeners() {
-    
+
     searchButton.addEventListener('click', () => {
         filters.searchTerm = searchInput.value.trim().toLowerCase();
         applyFilters();
@@ -52,18 +82,18 @@ function setupEventListeners() {
         }
     });
 
-    
+
     collectionFilter.addEventListener('change', () => {
         filters.collection = collectionFilter.value;
         applyFilters();
     });
 
-    
+
     minPriceInput.addEventListener('input', () => {
         filters.minPrice = parseInt(minPriceInput.value);
         minPriceValue.textContent = formatPrice(filters.minPrice);
 
-        
+
         if (filters.minPrice > filters.maxPrice) {
             maxPriceInput.value = filters.minPrice;
             filters.maxPrice = filters.minPrice;
@@ -73,12 +103,12 @@ function setupEventListeners() {
         applyFilters();
     });
 
-    
+
     maxPriceInput.addEventListener('input', () => {
         filters.maxPrice = parseInt(maxPriceInput.value);
         maxPriceValue.textContent = formatPrice(filters.maxPrice);
 
-        
+
         if (filters.maxPrice < filters.minPrice) {
             minPriceInput.value = filters.maxPrice;
             filters.minPrice = filters.maxPrice;
@@ -88,7 +118,7 @@ function setupEventListeners() {
         applyFilters();
     });
 
-    
+
     const mobileToggle = document.querySelector('.mobile-toggle');
     const menu = document.querySelector('.menu');
 
@@ -101,21 +131,22 @@ function setupEventListeners() {
 }
 
 
-function applyFilters() {
+async function applyFilters() {
+    const products = await fetchProducts();
     const filteredProducts = products.filter(product => {
-        
+
         const matchesSearch = filters.searchTerm === '' ||
             product.name.toLowerCase().includes(filters.searchTerm);
 
-        
+
         const matchesCollection = filters.collection === '' ||
             product.collection === filters.collection;
 
-        
+
         const matchesPrice = product.price >= filters.minPrice &&
             product.price <= filters.maxPrice;
 
-        
+
         return matchesSearch && matchesCollection && matchesPrice;
     });
 
@@ -123,35 +154,6 @@ function applyFilters() {
 }
 
 
-async function renderProducts() {
-    const products = await fetchProducts();
-    productsContainer.innerHTML = '';
-
-    if (products.length === 0) {
-        noResults.style.display = 'block';
-    } else {
-        noResults.style.display = 'none';
-        console.log(products)
-        products.forEach(product => {
-            const productCard = document.createElement('div');
-            productCard.className = 'product-card';
-
-            productCard.innerHTML = `
-                <div class="product-image">
-                    <img src="${product.image}" alt="${product.name}">
-                    <div class="product-collection">${product.collection}</div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-name">${product.name}</h3>
-                    <p class="product-price">${formatPrice(product.price)}</p>
-                    <a href="../productDetail/product-detail.html" class="product-btn">View Details</a>
-                </div>
-            `;
-
-            productsContainer.appendChild(productCard);
-        });
-    }
-}
 
 
 function formatPrice(price) {

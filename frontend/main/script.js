@@ -446,7 +446,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 this.showLoading(true);
 
 
-                const response = await fetch('data/featured-products.json');
+                const response = await fetch('./data/featured-products.json');
                 if (!response.ok) {
                     throw new Error('Failed to fetch product data');
                 }
@@ -498,21 +498,17 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
 
-            this.filteredProducts.forEach((product, index) => {
+            this.filteredProducts.forEach((product) => {
                 const productElement = document.createElement('div');
                 productElement.classList.add('hero-product-item');
-
-
-
                 productElement.innerHTML = `
-                    <img src="${product.image}" alt="${product.name}" class="hero-product-image">
+                    <img src="${product.images[0]}" alt="${product.name}" class="hero-product-image">
                     <div class="hero-product-details">
                         <h3 class="hero-product-name">${product.name}</h3>
-                        <div class="hero-product-price">${product.price}</div>
+                        <div class="hero-product-price">$${product.price}</div>
                         <a href="#" class="hero-product-shop-btn" data-product-id="${product.id}">Shop Now</a>
                     </div>
                 `;
-
                 this.carouselElement.appendChild(productElement);
             });
 

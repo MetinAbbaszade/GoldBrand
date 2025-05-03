@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 <div class="collection-image">
                     <img src="${collection.image}" alt="${collection.name}">
                     <div class="overlay">
-                        <a href="#" class="btn">Explore</a>
+                        <a href="../products/products.html" class="btn">Explore</a>
                     </div>
                 </div>
                 <div class="collection-info">
