@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    
+    document.body.classList.add('page-loaded');
     const tabs = document.querySelectorAll('.tab');
     const tabContents = document.querySelectorAll('.tab-content');
 

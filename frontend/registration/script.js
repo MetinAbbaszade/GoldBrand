@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.add('page-loaded');
     const tabButtons = document.querySelectorAll('.tab-btn');
     const loginForm = document.getElementById('login-form');
     const signupForm = document.getElementById('signup-form');

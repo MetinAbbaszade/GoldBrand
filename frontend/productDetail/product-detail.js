@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-
+    document.body.classList.add('page-loaded');
     const urlParams = new URLSearchParams(window.location.search);
     const productId = urlParams.get('id');
     getData(productId)

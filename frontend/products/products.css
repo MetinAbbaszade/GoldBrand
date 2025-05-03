@@ -414,3 +414,14 @@ footer {
         padding: 40px 0;
     }
 }
+
+#page-transition {
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+body.page-loaded #page-transition {
+    opacity: 1;
+    transform: translateY(0);
+}

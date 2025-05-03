@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", async function () {
+    document.body.classList.add('page-loaded');
     const collectionGrid = document.querySelector(".collection-grid");
 
     try {
@@ -25,6 +26,8 @@ document.addEventListener("DOMContentLoaded", async function () {
         console.error("Failed to load collections:", error);
     }
 });
+
+
 
 const fetchCollections = async () => {
     try {

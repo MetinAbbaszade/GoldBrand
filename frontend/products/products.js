@@ -18,6 +18,7 @@ let filters = {
 
 
 document.addEventListener('DOMContentLoaded', async () => {
+    document.body.classList.add('page-loaded');
     const products = await fetchProducts();
     renderProducts(products);
     setupEventListeners();
