@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         async init() {
             try {
-                const response = await fetch('data/collections.json');
+                const response = await fetch('../collections/collections.json');
                 if (!response.ok) {
                     throw new Error('Failed to fetch collections data');
                 }
@@ -260,6 +260,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
             this.collections.forEach((collection, index) => {
                 const item = document.createElement('div');
+                item.onclick = () => {
+                    window.location.href = '/frontend/collections/collections.html';
+                }
                 item.classList.add('collection-item');
                 if (index < this.itemsPerView) item.classList.add('active');
 
@@ -269,7 +272,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <div class="collection-image" style="${imageStyle}"></div>
                     <h3>${collection.name}</h3>
                     <p>${collection.description}</p>
-                    <a href="${collection.link}" class="view-collection">View Collection</a>
+                    <a href="/frontend/collections/collections.html" class="view-collection">View Collection</a>
                 `;
 
                 this.carousel.appendChild(item);
@@ -941,6 +944,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    
+
     renderCart();
 });
