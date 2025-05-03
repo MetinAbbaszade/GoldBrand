@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Products | Luxury Gold Brand</title>
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">GOLD LUXE</a>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="../main/index.html">Home</a></li>
+                    <li><a href="../collections/collections.html">Collections</a></li>
+                    <li><a href="../products/products.html" class="active">Products</a></li>
+                    <li><a href="../profile/index.html">Profile</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Jewelry Products</h1>
+                <p class="subtitle">Explore our exquisite gold pieces, handcrafted with precision and passion</p>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <div class="container">
+                <div class="filters-container">
+                    <div class="search-bar">
+                        <input type="text" id="search-input" placeholder="Search jewelry...">
+                        <button id="search-button"><i class="fas fa-search"></i></button>
+                    </div>
+
+                    <div class="filter-options">
+                        <div class="filter-dropdown">
+                            <select id="collection-filter">
+                                <option value="">All Collections</option>
+                                <option value="Heritage">Heritage</option>
+                                <option value="Modern">Modern Minimalist</option>
+                                <option value="Celestial">Celestial</option>
+                                <option value="Royal">Royal Heritage</option>
+                                <option value="Bridal">Bridal</option>
+                            </select>
+                        </div>
+
+                        <div class="price-filter">
+                            <div class="price-slider">
+                                <label for="price-range">Price Range:</label>
+                                <div class="range-inputs">
+                                    <input type="range" id="min-price" min="100" max="10000" value="100" step="100">
+                                    <input type="range" id="max-price" min="100" max="10000" value="10000" step="100">
+                                </div>
+                                <div class="price-values">
+                                    <span id="min-price-value">$100</span> - <span id="max-price-value">$10,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products-grid" id="products-container">
+                    <!-- Product items will be dynamically added here via JavaScript -->
+                </div>
+
+                <div class="no-results" id="no-results">
+                    <p>No products match your search criteria. Please try different filters.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Gold Luxe</h3>
+                    <p>Crafting timeless elegance since 1995</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Visit Us</h3>
+                    <p>123 Gold Street<br>Luxury Avenue<br>New York, NY 10001</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Gold Luxe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="products.js"></script>
+</body>
+
+</html>
