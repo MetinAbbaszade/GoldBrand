@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail | Luxury Gold Brand</title>
+    <link rel="stylesheet" href="./product-detail.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">GOLD LUXE</a>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="../main/index.html">Home</a></li>
+                    <li><a href="../collections/collections.html">Collections</a></li>
+                    <li><a href="../products/products.html">Products</a></li>
+                    <li><a href="../profile/index.html">Profile</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Breadcrumb navigation -->
+        <div class="breadcrumb container">
+            <a href="index.html">Home</a> / 
+            <a href="products.html">Products</a> / 
+            <span id="product-breadcrumb">Product Name</span>
+        </div>
+
+        <!-- Product detail section -->
+        <section class="product-detail container">
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img id="main-product-image" src="images/products/placeholder.jpg" alt="Product Image">
+                    <button class="zoom-btn"><i class="fas fa-search-plus"></i></button>
+                </div>
+                <div class="thumbnail-gallery">
+                    <div class="thumbnail active" data-image="images/products/placeholder.jpg">
+                        <img src="images/products/placeholder.jpg" alt="Thumbnail 1">
+                    </div>
+                    <div class="thumbnail" data-image="images/products/placeholder-2.jpg">
+                        <img src="images/products/placeholder-2.jpg" alt="Thumbnail 2">
+                    </div>
+                    <div class="thumbnail" data-image="images/products/placeholder-3.jpg">
+                        <img src="images/products/placeholder-3.jpg" alt="Thumbnail 3">
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <div class="collection-badge" id="product-collection">Royal Collection</div>
+                <h1 id="product-name">Royal Diamond Pendant</h1>
+                <div class="product-rating">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span>4.5 (24 reviews)</span>
+                </div>
+                <div class="product-price" id="product-price">$1,250</div>
+                <div class="product-availability">In Stock</div>
+
+                <div class="product-options">
+                    <div class="quantity-selector">
+                        <label for="quantity">Quantity</label>
+                        <div class="quantity-controls">
+                            <button class="quantity-btn minus" id="decrease-quantity">-</button>
+                            <input type="number" id="quantity" value="1" min="1" max="10">
+                            <button class="quantity-btn plus" id="increase-quantity">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-actions">
+                    <button class="btn-primary" id="add-to-cart">
+                        <i class="fas fa-shopping-bag"></i> Add to Cart
+                    </button>
+                    <button class="btn-wishlist" id="add-to-wishlist">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+
+                <div class="product-share">
+                    <span>Share:</span>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="product-delivery">
+                    <div class="delivery-option">
+                        <i class="fas fa-truck"></i>
+                        <span>Free shipping on orders over $1000</span>
+                    </div>
+                    <div class="delivery-option">
+                        <i class="fas fa-box"></i>
+                        <span>Secure packaging</span>
+                    </div>
+                    <div class="delivery-option">
+                        <i class="fas fa-gem"></i>
+                        <span>Authenticity certificate</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product details tabs -->
+        <section class="product-tabs container">
+            <div class="tabs-header">
+                <button class="tab-btn active" data-tab="description">Description</button>
+                <button class="tab-btn" data-tab="details">Details</button>
+                <button class="tab-btn" data-tab="reviews">Reviews</button>
+                <button class="tab-btn" data-tab="shipping">Shipping & Returns</button>
+            </div>
+            <div class="tabs-content">
+                <div class="tab-pane active" id="description">
+                    <p>This exquisite Royal Diamond Pendant showcases the finest craftsmanship and materials. The pendant features a brilliant-cut diamond centerpiece of exceptional clarity, set in 18-karat gold with meticulous attention to detail. The elegant design draws inspiration from royal jewels, creating a piece that is both timeless and sophisticated.</p>
+                    <p>Perfect for special occasions or as an heirloom piece to be treasured for generations, this pendant comes with a certificate of authenticity and our lifetime warranty.</p>
+                </div>
+                <div class="tab-pane" id="details">
+                    <ul>
+                        <li><strong>Metal:</strong> 18K Gold</li>
+                        <li><strong>Diamond:</strong> 0.75 carat</li>
+                        <li><strong>Clarity:</strong> VS1</li>
+                        <li><strong>Color:</strong> G</li>
+                        <li><strong>Chain Length:</strong> 18 inches</li>
+                        <li><strong>Pendant Size:</strong> 12mm x 8mm</li>
+                        <li><strong>Weight:</strong> 3.6g</li>
+                    </ul>
+                </div>
+                <div class="tab-pane" id="reviews">
+                    <div class="review-summary">
+                        <div class="average-rating">
+                            <span class="large-rating">4.5</span>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span>Based on 24 reviews</span>
+                        </div>
+                        <button class="btn-secondary" id="write-review">Write a Review</button>
+                    </div>
+
+                    <div class="reviews-list">
+                        <div class="review">
+                            <div class="review-header">
+                                <div class="reviewer">
+                                    <h4>Sarah J.</h4>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="review-date">March 15, 2023</div>
+                            </div>
+                            <div class="review-content">
+                                <h5>Stunning piece, excellent quality</h5>
+                                <p>This pendant exceeded my expectations. The gold has a beautiful luster and the diamond catches light magnificently. I've received numerous compliments. Shipping was fast and packaging was gorgeous too!</p>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <div class="review-header">
+                                <div class="reviewer">
+                                    <h4>Michael T.</h4>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="review-date">February 28, 2023</div>
+                            </div>
+                            <div class="review-content">
+                                <h5>Beautiful gift</h5>
+                                <p>Bought this for my wife's birthday. She absolutely loves it. The craftsmanship is excellent and the pendant looks even better in person than in the photos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="shipping">
+                    <h3>Shipping Information</h3>
+                    <p>All orders are processed within 1-2 business days. Shipping options will be calculated at checkout.</p>
+                    <ul>
+                        <li>Standard Shipping: 3-5 business days</li>
+                        <li>Express Shipping: 1-2 business days</li>
+                        <li>International Shipping: 7-14 business days</li>
+                    </ul>
+                    
+                    <h3>Return Policy</h3>
+                    <p>We offer a 30-day return policy for all our jewelry pieces. To be eligible for a return, your item must be unused and in the same condition that you received it. It must also be in the original packaging.</p>
+                    
+                    <h3>Warranty</h3>
+                    <p>All our gold jewelry comes with a lifetime warranty against manufacturing defects.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related products section -->
+        <section class="related-products">
+            <div class="container">
+                <h2>You May Also Like</h2>
+                <div class="products-slider" id="related-products">
+                    <!-- Related products will be inserted here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Recently viewed products -->
+        <section class="recently-viewed">
+            <div class="container">
+                <h2>Recently Viewed</h2>
+                <div class="products-row" id="recently-viewed">
+                    <!-- Recently viewed products will be inserted here by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Gold Luxe</h3>
+                    <p>Crafting timeless elegance since 1995</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Visit Us</h3>
+                    <p>123 Gold Street<br>Luxury Avenue<br>New York, NY 10001</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Gold Luxe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="zoom-modal" id="zoom-modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="zoom-image">
+    </div>
+
+    <script src="./product-detail.js"></script>
+</body>
+</html>
