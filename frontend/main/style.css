@@ -1416,7 +1416,9 @@ footer {
         width: 100%;
         right: -100%;
     }
-
+    .nav-link{
+        display: none;
+    }
     .cart-actions {
         grid-template-columns: 1fr;
     }
