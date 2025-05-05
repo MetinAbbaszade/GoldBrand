@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     const collectionGrid = document.querySelector(".collection-grid");
 
     try {
-        const collections = await fetchCollections(); // Await the async function
+        const collections = await fetchCollections();
 
         collections.forEach((collection) => {
             const collectionItem = document.createElement("div");
