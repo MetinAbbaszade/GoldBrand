@@ -1,4 +1,4 @@
-/* Products Page Styles */
+
 :root {
     --gold-primary: #D4AF37;
     --gold-light: #F4EBC1;
@@ -38,7 +38,7 @@ h4 {
     padding: 0 20px;
 }
 
-/* Header & Navigation */
+
 header {
     padding: 20px 0;
     background-color: var(--light);
@@ -101,7 +101,7 @@ header .container {
     transition: var(--transition);
 }
 
-/* Hero Section */
+
 .hero {
     padding: 60px 0;
     background-color: var(--grey-light);
@@ -121,12 +121,12 @@ header .container {
     color: #555;
 }
 
-/* Products Section */
+
 .products-section {
     padding: 60px 0;
 }
 
-/* Filter Styles */
+
 .filters-container {
     margin-bottom: 40px;
 }
@@ -211,7 +211,7 @@ header .container {
     color: var(--grey-dark);
 }
 
-/* Products Grid */
+
 .products-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -294,7 +294,7 @@ header .container {
     color: var(--light);
 }
 
-/* No Results Message */
+
 .no-results {
     text-align: center;
     padding: 40px 0;
@@ -306,7 +306,7 @@ header .container {
     color: var(--grey-dark);
 }
 
-/* Footer (same as collections page) */
+
 footer {
     background-color: var(--dark);
     color: var(--light);
@@ -354,7 +354,7 @@ footer {
     color: #999;
 }
 
-/* Responsive Styles */
+
 @media screen and (max-width: 1100px) {
     .products-grid {
         grid-template-columns: repeat(3, 1fr);

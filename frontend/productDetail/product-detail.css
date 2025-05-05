@@ -1,4 +1,4 @@
-/* Product Detail Page Styles */
+
 :root {
     --gold-primary: #D4AF37;
     --gold-light: #F4EBC1;
@@ -38,7 +38,7 @@ h4 {
     padding: 0 20px;
 }
 
-/* Header & Navigation */
+
 header {
     padding: 20px 0;
     background-color: var(--light);
@@ -101,7 +101,7 @@ header .container {
     transition: var(--transition);
 }
 
-/* Breadcrumb */
+
 .breadcrumb {
     padding: 20px 0;
     font-size: 14px;
@@ -122,7 +122,7 @@ header .container {
     color: var(--dark);
 }
 
-/* Product Detail Section */
+
 .product-detail {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -130,7 +130,7 @@ header .container {
     margin: 30px auto 60px;
 }
 
-/* Product Gallery */
+
 .product-gallery {
     position: relative;
 }
@@ -199,7 +199,7 @@ header .container {
     transform: scale(1.1);
 }
 
-/* Product Info */
+
 .product-info {
     display: flex;
     flex-direction: column;
@@ -399,7 +399,7 @@ header .container {
     font-size: 16px;
 }
 
-/* Product Tabs */
+
 .product-tabs {
     margin-bottom: 60px;
 }
@@ -477,7 +477,7 @@ header .container {
     margin-bottom: 10px;
 }
 
-/* Review Styles */
+
 .review-summary {
     display: flex;
     justify-content: space-between;
@@ -562,7 +562,7 @@ header .container {
     font-size: 14px;
 }
 
-/* Related Products */
+
 .related-products,
 .recently-viewed {
     padding: 60px 0;
@@ -640,12 +640,12 @@ header .container {
     margin-bottom: 15px;
 }
 
-/* Recently viewed products */
+
 .recently-viewed {
     background-color: var(--light);
 }
 
-/* Zoom Modal */
+
 .zoom-modal {
     display: none;
     position: fixed;
@@ -676,7 +676,7 @@ header .container {
     cursor: pointer;
 }
 
-/* Footer */
+
 footer {
     background-color: var(--dark);
     color: var(--light);
@@ -717,7 +717,7 @@ footer .social-icons a {
     color: #999;
 }
 
-/* Responsive Styles */
+
 @media screen and (max-width: 992px) {
     .product-detail {
         grid-template-columns: 1fr;
@@ -803,7 +803,7 @@ footer .social-icons a {
 
 }
 
-/* Example: fade in + slide */
+
 #page-transition {
     opacity: 0;
     transform: translateY(200px);

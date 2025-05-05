@@ -466,7 +466,7 @@ h4 {
     }
 }
 
-/* Example: fade in + slide */
+
 #page-transition {
     opacity: 0;
     transform: translateY(100px);
@@ -511,7 +511,7 @@ body.page-loaded #page-transition {
     color: #ffcc00;
 }
 
-/* Mobile Toggle */
+
 .mobile-toggle {
     display: none;
     font-size: 1.8rem;
@@ -519,7 +519,7 @@ body.page-loaded #page-transition {
     color: white;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
     .nav-links {
         position: absolute;
