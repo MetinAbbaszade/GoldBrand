@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Brand - User Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header__title">Gold Brand</h1>
+        </header>
+
+        <main class="main">
+            <section class="profile">
+                <div class="profile__card">
+                    <div class="profile__header">
+                        <h2 class="profile__title">Member Profile</h2>
+                        <div class="profile__avatar" id="userAvatar">
+                            <div class="profile__initials" id="userInitials">JD</div>
+                            <img class="profile__image" id="avatarImage" src="" alt="Profile photo" hidden>
+                        </div>
+                        <div class="profile__tier" id="membershipTier">Platinum</div>
+                    </div>
+
+                    <!-- Tab Navigation -->
+                    <div class="profile__tabs">
+                        <button class="profile__tab active" data-tab="profile">Profile</button>
+                        <button class="profile__tab" data-tab="orders">Orders</button>
+                        <button class="profile__tab" data-tab="wishlist">Wishlist</button>
+                        <button class="profile__tab" data-tab="settings">Settings</button>
+                    </div>
+
+                    <!-- Tab Content -->
+                    <div class="profile__content">
+                        <!-- Profile Tab -->
+                        <div class="profile__tab-pane active" data-tab-content="profile">
+                            <form class="profile__form" id="profileForm">
+                                <div class="profile__form-group">
+                                    <label for="fullName" class="profile__label">Full Name</label>
+                                    <input type="text" id="fullName" class="profile__input" value="Jane Doe" disabled>
+                                    <button type="button" class="profile__edit-btn" data-field="fullName"
+                                        aria-label="Edit full name">
+                                        <span class="icon">✎</span>
+                                    </button>
+                                </div>
+
+                                <div class="profile__form-group">
+                                    <label for="email" class="profile__label">Email</label>
+                                    <input type="email" id="email" class="profile__input" value="jane.doe@example.com"
+                                        disabled>
+                                    <button type="button" class="profile__edit-btn" data-field="email"
+                                        aria-label="Edit email">
+                                        <span class="icon">✎</span>
+                                    </button>
+                                </div>
+
+                                <div class="profile__form-group">
+                                    <label for="address" class="profile__label">Address</label>
+                                    <textarea id="address" class="profile__input profile__textarea"
+                                        disabled>123 Luxury Lane, Beverly Hills, CA 90210</textarea>
+                                    <button type="button" class="profile__edit-btn" data-field="address"
+                                        aria-label="Edit address">
+                                        <span class="icon">✎</span>
+                                    </button>
+                                </div>
+
+                                <div class="profile__actions">
+                                    <button type="submit" class="profile__submit-btn" id="saveBtn" disabled>Save
+                                        Changes</button>
+                                    <button type="button" class="profile__logout-btn">Logout</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Orders Tab -->
+                        <div class="profile__tab-pane" data-tab-content="orders">
+                            <div class="orders">
+                                <h3 class="orders__title">Order History</h3>
+
+                                <div class="order__list">
+                                    <!-- Order Item -->
+                                    <div class="order__item">
+                                        <div class="order__header">
+                                            <div class="order__id-date">
+                                                <span class="order__id">Order #GLD-9876</span>
+                                                <span class="order__date">June 12, 2023</span>
+                                            </div>
+                                            <div class="order__status">Delivered</div>
+                                        </div>
+                                        <div class="order__details">
+                                            <div class="order__product">
+                                                <div class="order__product-image">
+                                                    <img src="https://via.placeholder.com/80" alt="Gold Bracelet">
+                                                </div>
+                                                <div class="order__product-info">
+                                                    <h4 class="order__product-name">18K Gold Bracelet</h4>
+                                                    <p class="order__product-desc">Hand-crafted elegant bracelet</p>
+                                                </div>
+                                            </div>
+                                            <div class="order__amount">$3,499</div>
+                                        </div>
+                                        <div class="order__actions">
+                                            <button class="order__btn">Track Order</button>
+                                            <button class="order__btn order__btn--secondary">Return</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Order Item -->
+                                    <div class="order__item">
+                                        <div class="order__header">
+                                            <div class="order__id-date">
+                                                <span class="order__id">Order #GLD-6543</span>
+                                                <span class="order__date">April 29, 2023</span>
+                                            </div>
+                                            <div class="order__status">Delivered</div>
+                                        </div>
+                                        <div class="order__details">
+                                            <div class="order__product">
+                                                <div class="order__product-image">
+                                                    <img src="https://via.placeholder.com/80" alt="Gold Necklace">
+                                                </div>
+                                                <div class="order__product-info">
+                                                    <h4 class="order__product-name">Diamond Pendant Necklace</h4>
+                                                    <p class="order__product-desc">24K gold with 2ct diamond pendant</p>
+                                                </div>
+                                            </div>
+                                            <div class="order__amount">$5,999</div>
+                                        </div>
+                                        <div class="order__actions">
+                                            <button class="order__btn">View Details</button>
+                                            <button class="order__btn order__btn--secondary">Buy Again</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Wishlist Tab -->
+                        <div class="profile__tab-pane" data-tab-content="wishlist">
+                            <div class="wishlist">
+                                <h3 class="wishlist__title">My Wishlist</h3>
+
+                                <div class="wishlist__grid">
+                                    <!-- Wishlist Item -->
+                                    <div class="wishlist__item">
+                                        <div class="wishlist__image">
+                                            <img src="https://via.placeholder.com/150" alt="Gold Watch">
+                                            <button class="wishlist__remove"
+                                                aria-label="Remove from wishlist">×</button>
+                                        </div>
+                                        <div class="wishlist__info">
+                                            <h4 class="wishlist__name">Luxury Gold Watch</h4>
+                                            <p class="wishlist__price">$12,500</p>
+                                            <button class="wishlist__add-to-cart">Add to Cart</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Wishlist Item -->
+                                    <div class="wishlist__item">
+                                        <div class="wishlist__image">
+                                            <img src="https://via.placeholder.com/150" alt="Gold Earrings">
+                                            <button class="wishlist__remove"
+                                                aria-label="Remove from wishlist">×</button>
+                                        </div>
+                                        <div class="wishlist__info">
+                                            <h4 class="wishlist__name">Diamond Earrings</h4>
+                                            <p class="wishlist__price">$4,350</p>
+                                            <button class="wishlist__add-to-cart">Add to Cart</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Wishlist Item -->
+                                    <div class="wishlist__item">
+                                        <div class="wishlist__image">
+                                            <img src="https://via.placeholder.com/150" alt="Gold Ring">
+                                            <button class="wishlist__remove"
+                                                aria-label="Remove from wishlist">×</button>
+                                        </div>
+                                        <div class="wishlist__info">
+                                            <h4 class="wishlist__name">Sapphire Gold Ring</h4>
+                                            <p class="wishlist__price">$3,799</p>
+                                            <button class="wishlist__add-to-cart">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Settings Tab -->
+                        <div class="profile__tab-pane" data-tab-content="settings">
+                            <div class="settings">
+                                <h3 class="settings__title">Account Settings</h3>
+
+                                <form class="settings__form">
+                                    <div class="settings__section">
+                                        <h4 class="settings__section-title">Notifications</h4>
+
+                                        <div class="settings__option">
+                                            <div class="settings__option-info">
+                                                <h5 class="settings__option-title">Email Updates</h5>
+                                                <p class="settings__option-desc">Receive updates about new products and
+                                                    exclusive offers</p>
+                                            </div>
+                                            <label class="settings__toggle">
+                                                <input type="checkbox" checked>
+                                                <span class="settings__toggle-slider"></span>
+                                            </label>
+                                        </div>
+
+                                        <div class="settings__option">
+                                            <div class="settings__option-info">
+                                                <h5 class="settings__option-title">Order Updates</h5>
+                                                <p class="settings__option-desc">Get notifications about your order
+                                                    status</p>
+                                            </div>
+                                            <label class="settings__toggle">
+                                                <input type="checkbox" checked>
+                                                <span class="settings__toggle-slider"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="settings__section">
+                                        <h4 class="settings__section-title">Security</h4>
+
+                                        <div class="settings__form-group">
+                                            <label for="currentPassword" class="settings__label">Current
+                                                Password</label>
+                                            <input type="password" id="currentPassword" class="settings__input">
+                                        </div>
+
+                                        <div class="settings__form-group">
+                                            <label for="newPassword" class="settings__label">New Password</label>
+                                            <input type="password" id="newPassword" class="settings__input">
+                                        </div>
+
+                                        <div class="settings__form-group">
+                                            <label for="confirmPassword" class="settings__label">Confirm New
+                                                Password</label>
+                                            <input type="password" id="confirmPassword" class="settings__input">
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="settings__submit-btn">Update Settings</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>© 2023 Gold Brand Luxury. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
